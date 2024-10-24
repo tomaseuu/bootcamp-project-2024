@@ -1,0 +1,663 @@
+/* Variables */
+:root {
+  --cg-black: rgb(78, 105, 152);
+  --cg-blue: rgb(251, 251, 251);
+  --cg-grey: rgb(78, 105, 152);
+  --cg-white: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--cg-grey);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Navigation */
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  padding: 0px 0px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: var(--cg-white);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
+
+.navbar a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  color: var(--cg-blue);
+}
+
+.logo a {
+  font-family: monospace;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+/* Main Section */
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia;
+}
+
+/* Portfolio Grid */
+.project {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 1em 0 2em 0;
+}
+
+.item-link {
+  width: 70%;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 50%;
+  height: 50px;
+  flex-basis: 50px;
+  flex-grow: 2;
+}
+
+.project-details {
+  display: flex;
+  background-color: var(--cg-white);
+  width: 30%;
+  height: 500px;
+  flex-shrink: 1;
+  padding: 0 20px;
+  margin: 0px;
+  line-height: 1.5;
+  overflow: scroll;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.project-details a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.project-details a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* portfolio  */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 1em 0 2em 0;
+}
+
+.item-link {
+  width: 70%;
+}
+
+.project-image {
+  object-fit: cover;
+  width: 50%;
+  height: 50px;
+  flex-basis: 50px;
+  flex-grow: 2;
+}
+
+.project-details {
+  display: flex;
+  background-color: var(--cg-white);
+  width: 30%;
+  height: 500px;
+  flex-shrink: 1;
+  padding: 0 20px;
+  margin: 0px;
+  line-height: 1.5;
+  overflow: scroll;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.project-details a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.project-details a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.project-details {
+  font-weight: bold;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* home page */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(78, 105, 152);
+  border: 1px solid rgb(39, 103, 149);
+  border-radius: 5px;
+}
+
+.about-image img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.about-text {
+  font-family: Arial;
+  color: #ffffff;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+/* Resume Section */
+.page-title {
+  font-size: 36px;
+  font-family: "Georgia", serif;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.resume {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.resume em {
+  font-style: italic;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.header p a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header p a:hover {
+  color: rgb(134, 195, 247);
+}
+
+/* Section and Entries */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--cg-black);
+}
+
+.entry h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.entry p {
+  margin-bottom: 10px;
+}
+
+/* Download button */
+.download-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.download-button {
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: rgb(134, 195, 247);
+}
+
+.download-button .icon {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+/* contact */
+.contact-page {
+  color: var(--cg-blue);
+}
+
+.contact-page label,
+.contact-page input,
+.contact-page textarea {
+  color: #ffffff;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  color: black;
+  background-color: white;
+}
+.contact-page textarea {
+  color: black;
+}
+
+/* submit button */
+input[type="submit"] {
+  background-color: #6fabd4;
+  color: var(--cg-white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(117, 146, 174);
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* CSS for footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6fabd4;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/*quote */
+
+.quote-slider {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.quote {
+  width: 1700px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+}
+
+/* youtube */
+.youtube-video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.favorite-quote,
+.current-song {
+  color: var(--cg-white);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Totoro  */
+.totoro-picture {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.totoro-picture img {
+  max-width: 150px;
+  height: auto;
+}
+.contact-left {
+  position: relative;
+}
+
+.totoro-picture {
+  position: absolute;
+  right: -500px;
+  top: 200px;
+}
+
+.totoro-picture img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* mini creatures  */
+.mini-creatures-picture {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.mini-creatures-picture img {
+  max-width: 150px;
+  height: auto;
+}
+.contact-left {
+  position: relative;
+}
+
+.mini-creatures-picture {
+  position: absolute;
+  right: 550px;
+  top: 200px;
+}
+
+.mini-creatures-picture img {
+  max-width: 400px;
+  height: auto;
+}
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* blog */
+.blog-page {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 4076px;
+  margin: auto;
+}
+
+.blog-page .intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-page .page-title {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.blog-page .intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+.blog-page .video-posts {
+  margin-bottom: 40px;
+}
+
+.blog-page .video-post {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog-page .post-title a {
+  font-size: 24px;
+  color: #5f7996;
+  text-decoration: none;
+}
+
+.blog-page .post-title a:hover {
+  text-decoration: underline;
+}
+
+.blog-page .post-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.blog-page .post-summary {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-page .subscribe {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blog-page .subscribe .button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ec5959;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog-page .subscribe .button:hover {
+  background-color: #ff8282;
+}
+
+/* footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* spotify logo */
+.spotify-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.spotify-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* portfolio collage*/
+.collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.collage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+  transform: scale(1.05);
+}
+
+.collage img:nth-child(odd) {
+  grid-row: span 2;
+}
+
+.collage img:nth-child(even) {
+  grid-row: span 1;
+}
+
+.portfolio-page {
+  background-color: white;
+}
+
+.portfolio-page main {
+  background-color: transparent;
+}
+
+.portfolio-page h1 {
+  color: #74a4d7;
+}
+
+.collage figure {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.collage img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.collage figcaption {
+  font-size: 1em;
+  color: #555;
+  margin-top: 20px;
+}

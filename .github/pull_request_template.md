@@ -1,4 +1,4 @@
-## Developer: {Full Name}
+## Developer: {Thomas Le}
 
 Closes #{ISSUE NUMBER HERE}
 
