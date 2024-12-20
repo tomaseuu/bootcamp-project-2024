@@ -1,0 +1,62 @@
+/* portfolio collage*/
+.collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.collageFigure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collageFigcaption {
+  font-size: 1em;
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.collageImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  padding: 0 0 50px 0;
+}
+
+.collageImgg {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.collageImg:hover {
+  transform: scale(1.05);
+}
+
+.portfolioPage {
+  background-color: white;
+}
+
+.portfolioPage main {
+  background-color: transparent;
+}
+
+.portfolioPage h1 {
+  color: #74a4d7;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 20px 0;
+}
+
+.portfolioPage p {
+  text-align: center;
+}

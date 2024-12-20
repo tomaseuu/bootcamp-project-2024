@@ -1,0 +1,120 @@
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia;
+}
+
+.page {
+  background-color: rgb(78, 105, 152);
+  height: 100%;
+  padding-bottom: 5%;
+}
+/* home page */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(78, 105, 152);
+  border: 1px solid rgb(39, 103, 149);
+  border-radius: 5px;
+  /* height: 100%; */
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.aboutImage {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.aboutImage img {
+  display: flex;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.aboutText {
+  font-family: Arial;
+  color: #ffffff;
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutText h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.aboutText h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.aboutText p {
+  font-size: 16px;
+
+  line-height: 1.5;
+}
+
+/*quote */
+
+.quoteSlider {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  border-radius: 0;
+  margin: 20px 0;
+}
+
+.quote {
+  width: 1700px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #f9f9f9;
+  border-radius: 0;
+  font-size: 1.2em;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* youtube */
+.youtubevideoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  height: 300px;
+}
+.favoriteQuote,
+.currentSong {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* spotify logo */
+.spotifyText {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.spotifyContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  /* margin-bottom: 5%; */
+}
