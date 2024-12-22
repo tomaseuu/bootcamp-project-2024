@@ -17,4 +17,13 @@ const blogSchema = new mongoose.Schema({
 
 const Blog = mongoose.models.Blog || mongoose.model("Blog", blogSchema);
 
+export interface BlogDocument {
+  name: string;
+  description: string;
+  image: string;
+  posted: Date;
+  slug: string;
+  comments: { user: string; comment: string; time: Date }[];
+}
+
 export default Blog;

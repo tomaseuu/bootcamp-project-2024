@@ -1,20 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/database/db";
-import portfolioSchema from "@/database/portfolioSchema";
+import blogSchema from "@/database/blogSchema";
 
-// Use the Params type from next to type the second argument correctly
-export async function GET(
-  req: NextRequest,
-  { params }: { params: { slug: string } }
-) {
+type IParams = {
+  params: {
+    slug: string;
+  };
+};
+
+// If { params } looks confusing, check the note below this code block
+export async function GET(req: NextRequest, { params }: IParams) {
   await connectDB(); // function from db.ts before
-  const { slug } = params; // destructure slug from params
+  const { slug } = params; // another destructure
 
   try {
-    const portfolio = await portfolioSchema.findOne({ slug }).orFail();
-    return NextResponse.json(portfolio);
+    const blog = await blogSchema.findOne({ slug }).orFail();
+    return NextResponse.json(blog);
   } catch (err) {
     console.log(err);
-    return NextResponse.json("Portfolio not found.", { status: 404 });
+    return NextResponse.json("Blog not found.", { status: 404 });
   }
 }
