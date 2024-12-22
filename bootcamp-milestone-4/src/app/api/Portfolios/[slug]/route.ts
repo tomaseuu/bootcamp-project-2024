@@ -4,10 +4,10 @@ import portfolioSchema from "@/database/portfolioSchema";
 
 export async function GET(
   req: NextRequest,
-  context: { params: { slug: string } }
+  { params }: { params: { slug: string } }
 ) {
   await connectDB();
-  const { slug } = context.params;
+  const { slug } = params;
 
   try {
     const portfolio = await portfolioSchema.findOne({ slug }).orFail();
