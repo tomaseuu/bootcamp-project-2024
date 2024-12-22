@@ -111,7 +111,7 @@ export default async function Portfolios() {
             </a>
             <figcaption className={styles.collageFigcaption}>
               “WATERFALL”
-            </figcaption>
+            </figcaption> 
           </figure>
 
           <figure className={styles.collageImg}>
