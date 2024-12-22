@@ -1,16 +1,17 @@
-import { NextRequest, NextResponse } from 'next/server';
-import connectDB from '@/database/db';
-import blogSchema from '@/database/blogSchema';
+import { NextRequest, NextResponse } from "next/server";
+import connectDB from "@/database/db";
+import portfolioSchema from "@/database/portfolioSchema";
 
-export async function GET(req: NextRequest, { params }: { params: { slug: string } }) {
-  await connectDB();
-  const { slug } = params; 
+// Use the Params type from next to type the second argument correctly
+export async function GET(req: NextRequest, context: { params: { slug: string } }) {
+  await connectDB(); // function from db.ts before
+  const { slug } = context.params; // destructure slug from params
 
   try {
-    const blog = await blogSchema.findOne({ slug }).orFail();
-    return NextResponse.json(blog);
+    const portfolio = await portfolioSchema.findOne({ slug }).orFail();
+    return NextResponse.json(portfolio);
   } catch (err) {
 	console.log(err)
-    return NextResponse.json('Blog not found.', { status: 404 });
+    return NextResponse.json("Portfolio not found.", { status: 404 });
   }
 }
