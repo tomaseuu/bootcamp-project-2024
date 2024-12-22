@@ -1,0 +1,107 @@
+.posted {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.commentSection {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.commentTitle {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.comment {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f1f8ff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+  color: #2d3a5d;
+  font-size: 1rem;
+}
+
+.comment p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.commentTime {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.commentForm {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.commentForm input,
+.commentForm textarea {
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  resize: none;
+  width: 100%;
+  max-width: 600px;
+}
+
+.commentForm input:focus,
+.commentForm textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.commentForm button {
+  padding: 12px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.commentForm button:hover {
+  background-color: #357ab7;
+}
+
+.commentForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: green;
+  text-align: center;
+}

@@ -1,0 +1,166 @@
+/* contact */
+.contactPage {
+  color: rgb(251, 251, 251);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
+  gap: 15px;
+  background-color: rgb(78, 105, 152);
+  overflow-x: hidden;
+}
+.contactPage h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactPage p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contactPage label,
+.contactPage input,
+.contactPage textarea {
+  color: #ffffff;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.input[type="text"],
+.input[type="email"],
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  color: black;
+  background-color: white;
+}
+.contactPage textarea {
+  color: black;
+}
+
+/* submit button */
+.input[type="submit"] {
+  background-color: #6fabd4;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input[type="submit"]:hover {
+  background-color: rgb(117, 146, 174);
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* youtube */
+.youtubeVideoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 2px 0;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+}
+
+.socialIcons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.2);
+}
+
+/* Totoro  */
+.totoroPicture {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.totoroPicture img {
+  max-width: 150px;
+  height: auto;
+}
+
+.totoroPicture {
+  position: absolute;
+  right: -500px;
+  top: 200px;
+}
+
+.totoroPicture img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* mini creatures  */
+.minicreaturesPicture {
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.minicreaturesPicture img {
+  max-width: 150px;
+  height: auto;
+}
+.contactLeft {
+  position: relative;
+}
+
+.minicreaturesPicture {
+  position: absolute;
+  right: 550px;
+  top: 200px;
+}
+
+.minicreaturesPicture img {
+  max-width: 400px;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2px 10px 2px 10px;
+  background-color: rgb(78, 105, 152);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
