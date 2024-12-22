@@ -1,7 +1,7 @@
-"use client"; 
+"use client";
 
 import React, { useState } from "react";
-import styles from "./Contact.module.css"; 
+import styles from "./contact.module.css";
 import Image from "next/image";
 import emailjs from "emailjs-com";
 
@@ -11,7 +11,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState(""); 
+  const [status, setStatus] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -25,23 +25,18 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-   
+
     if (!formData.name || !formData.email || !formData.message) {
       setStatus("Please fill in all fields.");
       return;
     }
 
     emailjs
-      .send(
-        "service_q1zf2h7", 
-        "website_ip5xw39", 
-        formData, 
-        "fNhUcZtPS1NsJ3AYT" 
-      )
+      .send("service_q1zf2h7", "website_ip5xw39", formData, "fNhUcZtPS1NsJ3AYT")
       .then(
         () => {
           setStatus("Email sent successfully!");
-          setFormData({ name: "", email: "", message: "" }); 
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.log(error);
@@ -122,7 +117,7 @@ export default function Contact() {
 
             <input className={styles.input} type="submit" value="Submit" />
           </form>
-          {status && <p>{status}</p>} 
+          {status && <p>{status}</p>}
           <div className={styles.socialIcons}>
             <a
               href="https://github.com/tomaseuu"
