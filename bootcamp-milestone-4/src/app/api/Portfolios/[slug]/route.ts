@@ -1,24 +1,17 @@
+import { NextRequest, NextResponse } from "next/server";
+import connectDB from "@/database/db";
+import portfolioSchema from "@/database/portfolioSchema";
 
-import { NextRequest, NextResponse } from 'next/server'
-import connectDB from "@/database/db"
-import portfolioSchema from "@/database/portfolioSchema"
+export async function GET(req: NextRequest) {
+  const slug = req.nextUrl.pathname.split("/").pop()!; 
 
-type IParams = {
-		params: {
-			slug: string
-		}
-}
+  await connectDB();
 
-// If { params } looks confusing, check the note below this code block
-export async function GET(req: NextRequest, { params }: IParams) {
-    await connectDB() // function from db.ts before
-		const { slug } = params // another destructure
-
-	   try {
-	        const portfolio = await portfolioSchema.findOne({ slug }).orFail()
-	        return NextResponse.json(portfolio)
-	    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-	    } catch (err) {
-	        return NextResponse.json('Blog not found.', { status: 404 })
-	    }
+  try {
+    const portfolio = await portfolioSchema.findOne({ slug }).orFail();
+    return NextResponse.json(portfolio);
+  } catch (err) {
+    console.error("Error fetching portfolio:", err);
+    return NextResponse.json("Portfolio not found.", { status: 404 });
+  }
 }

@@ -3,16 +3,11 @@ import connectDB from "@/database/db";
 import Blog from "@/database/blogSchema";
 import Portfolio from "@/database/portfolioSchema";
 
-type IParams = {
-  params: {
-    slug: string;
-  };
-};
+export async function GET(req: NextRequest) {
+  const slug = req.nextUrl.pathname.split("/").pop()!; 
 
-export async function GET(req: NextRequest, { params }: IParams) {
   await connectDB();
 
-  const { slug } = await params;
   try {
     const portfolio = await Portfolio.findOne({ slug }).orFail();
 
@@ -31,13 +26,12 @@ export async function GET(req: NextRequest, { params }: IParams) {
   }
 }
 
-export async function POST(req: NextRequest, { params }: IParams) {
+export async function POST(req: NextRequest) {
   console.log("POST request received");
 
-  await connectDB();
+  const slug = req.nextUrl.pathname.split("/").pop()!; 
 
-  const { slug } = await params;
-  console.log("Slug:", slug);
+  await connectDB();
 
   try {
     const { user, comment } = await req.json();
