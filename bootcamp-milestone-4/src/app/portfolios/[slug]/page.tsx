@@ -9,7 +9,7 @@ import Image from "next/image";
 export default async function PortfolioPost({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
 
