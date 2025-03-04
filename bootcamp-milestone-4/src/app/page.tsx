@@ -16,8 +16,8 @@ export default function Home() {
         <div className={styles.aboutText}>
           <h1>
             Rising junior at Cal Poly San Luis Obispo majoring in Computer
-            Science, with a passion for pustyles.rsuing a career at the
-            intersection of technology and the health sector.
+            Science, with a passion for pursuing a career at the intersection of
+            technology and the health sector.
           </h1>
           <h3> - BIO - </h3>
           <p>
