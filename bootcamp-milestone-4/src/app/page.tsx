@@ -75,7 +75,7 @@ export default function Home() {
             stories and sharing them with others. I also enjoy unwinding with a
             good Korean drama or catching up on One Piece, and I’m constantly
             saving inspiration from Pinterest to keep my ideas
-            flowing.asdkfjsklafjdklsajfjsadflksjafkldjsaflkjdflksajdfkljafkldjafsklajdflkjasfl
+            flowing.asdkfjsklafjdklsajfjsadflksjafkldjsaflkjdflksajdfkljafkldjafsklajdflkjasflsdfsfdsfsfdsf
           </p>
         </div>
 
