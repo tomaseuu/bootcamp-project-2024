@@ -3,25 +3,24 @@ import mongoose from "mongoose";
 let isConnected = false;
 
 const connectDB = async () => {
-  const uri = process.env.MONGODB_URI || process.env.MONGO_URI;
+  const uri = process.env.MONGODB_URI;
 
   if (!uri) {
-    throw new Error("❌ MONGODB_URI is not defined in environment variables");
+    throw new Error("❌ MONGODB_URI is not defined in env");
   }
 
-  if (isConnected) {
-    return;
-  }
+  if (isConnected) return;
 
   try {
     await mongoose.connect(uri, {
-      dbName: "test", // ✅ replace with your actual DB name if needed
+      dbName: "test", // or your real DB name
     });
     isConnected = true;
-    console.log("✅ Connected to MongoDB");
-  } catch (error) {
-    console.error("❌ MongoDB connection error:", (error as Error).message);
-    throw error; // so build fails gracefully if connection breaks
+    console.log("✅ MongoDB connected");
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (err: any) {
+    console.error("❌ MongoDB connection error:", err.message);
+    throw err;
   }
 };
 
