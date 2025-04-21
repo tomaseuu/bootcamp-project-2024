@@ -60,7 +60,7 @@ export default function Home() {
             code, designing thoughtful user interfaces, or collaborating with
             others on meaningful projects. My passion lies in turning ideas into
             real, usable things that can help people, and I’m always eager to
-            learn something new and push my skills a little further each day.
+            learn something new and push my skills a little further each day.  
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
             where a lot of my creativity shines. I love turning moments into
             stories and sharing them with others. I also enjoy unwinding with a
             good Korean drama or catching up on One Piece, and I’m constantly
-            saving inspiration from Pinterest to keep my ideas flowing.
+            saving inspiration from Pinterest to keep my ideas flowing.   
           </p>
         </div>
 
