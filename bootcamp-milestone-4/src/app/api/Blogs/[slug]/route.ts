@@ -5,9 +5,8 @@ import blogSchema from "@/database/blogSchema";
 export async function GET(req: NextRequest) {
   await connectDB(); // Ensure the database connection
 
-
   const url = new URL(req.url);
-  const slug = url.pathname.split("/").pop(); 
+  const slug = url.pathname.split("/").pop();
 
   if (!slug) {
     return NextResponse.json("Slug not provided.", { status: 400 });
