@@ -29,7 +29,7 @@ export default function Home() {
         <div className={styles.pictureBio}>
           <div className={styles.aboutImage}>
             <Image
-              src="/thomas-headshot.jpeg"
+              src="/thomas-headshot.JPEG"
               alt="Thomas Le Image"
               width={300}
               height={300}
