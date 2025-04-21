@@ -15,6 +15,7 @@ export default function Home() {
         "Welcome to My Site!",
         "I love Learning",
         "I love Coding",
+        "An aspiring Software Engineer",
       ],
       typeSpeed: 60,
       backSpeed: 30,
