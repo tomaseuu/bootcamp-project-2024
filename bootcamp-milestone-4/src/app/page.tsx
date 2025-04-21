@@ -74,7 +74,8 @@ export default function Home() {
             where a lot of my creativity shines. I love turning moments into
             stories and sharing them with others. I also enjoy unwinding with a
             good Korean drama or catching up on One Piece, and I’m constantly
-            saving inspiration from Pinterest to keep my ideas flowing.
+            saving inspiration from Pinterest to keep my ideas
+            flowing.asdkfjsklafjdklsajfjsadflksjafkldjsaflkjdflksajdfkljafkldjafsklajdflkjasfl
           </p>
         </div>
 
