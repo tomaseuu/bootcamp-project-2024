@@ -10,8 +10,8 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgb(78, 105, 152);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(78, 105, 152);
   padding: 0 20px;
   font-size: 15px;
 }
@@ -25,7 +25,7 @@
 }
 
 .navbar a {
-  color: rgb(255, 255, 255);
+  color: rgb(78, 105, 152);
   font-weight: bold;
   margin: 0 12px;
   text-decoration: none;

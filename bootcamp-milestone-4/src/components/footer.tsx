@@ -9,8 +9,7 @@ export default function Footer() {
     // change all the "class" to "className"
     // <header className={style.footer}>
     <footer className={style.footer}>
-      © 2024 Thomas Le | All Rights Reserved | If you are reading this, I hope
-      you have a good day!
+      © 2025 Thomas Le | All Rights Reserved
     </footer>
     // </header>
   );

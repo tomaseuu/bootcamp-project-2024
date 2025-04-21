@@ -7,9 +7,10 @@
 
 .page {
   background-color: rgb(78, 105, 152);
-  height: 100%;
-  padding-bottom: 5%;
+  min-height: 100vh; 
+  padding: 0;
 }
+
 /* home page */
 
 .about {
@@ -20,7 +21,6 @@
   background-color: rgb(78, 105, 152);
   border: 1px solid rgb(39, 103, 149);
   border-radius: 5px;
-  /* height: 100%; */
   overflow-x: hidden;
   max-width: 100vw;
   margin: 0 auto;
@@ -28,26 +28,27 @@
   padding: 20px 20px 20px 20px;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 .aboutImage {
+  flex: 1;
   display: flex;
-  margin: auto;
   justify-content: center;
 }
 .aboutImage img {
-  display: flex;
-  max-width: 300px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .aboutText {
-  font-family: Arial;
-  color: #ffffff;
   flex: 1;
-  margin-left: 20px;
+  color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .aboutText h1 {
@@ -64,57 +65,88 @@
 
 .aboutText p {
   font-size: 16px;
-
   line-height: 1.5;
 }
 
-/*quote */
-
-.quoteSlider {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: center;
-  border-radius: 0;
-  margin: 20px 0;
-}
-
-.quote {
-  width: 1700px;
-  text-align: center;
-  padding: 20px;
-  border: 2px solid #f9f9f9;
-  border-radius: 0;
-  font-size: 1.2em;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* youtube */
-.youtubevideoContainer {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  height: 300px;
-}
-.favoriteQuote,
-.currentSong {
+.currentBio {
   font-size: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
 }
 
-/* spotify logo */
-.spotifyText {
-  font-size: 18px;
-  color: #ffffff;
+.bioText {
+  font-family: Arial;
+  color: #000000;
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.spotifyContainer {
+/* section page */
+.sectionBox {
   display: flex;
-  align-items: center;
-  margin: 0 auto;
   justify-content: center;
-  /* margin-bottom: 5%; */
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.infoCard {
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+}
+
+.infoCard h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.infoCard p,
+.skillsList {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.skillsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillsList li {
+  margin-bottom: 10px;
+}
+
+.pictureBio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e6998;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.thomasImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
