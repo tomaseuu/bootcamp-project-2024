@@ -53,7 +53,7 @@ export default function Home() {
         <div className={styles.infoCard}>
           <h3>About Me</h3>
           <p>
-            Hi, I’m Thomas, a junior front-end developer and Computer Science
+            Hi, I’m Thomas, a junior computer science
             student who loves creating, building, and bringing ideas to life.
             I’m always exploring new technologies, challenging myself to grow,
             and finding joy in the process. Whether that’s through writing clean
@@ -84,8 +84,15 @@ export default function Home() {
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Git</li>
+            <li>MongoDB</li>
             <li>React</li>
+            <li>Next.js</li>
             <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Microsoft Tools</li>
           </ul>
         </div>
       </div>

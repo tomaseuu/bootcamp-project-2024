@@ -34,7 +34,6 @@
 }
 
 .navbar a:hover {
-  color: rgb(251, 251, 251);
   text-decoration: underline;
 }
 
@@ -69,4 +68,27 @@
 
 .header p a:hover {
   color: rgb(134, 195, 247);
+}
+
+/*social icons */
+
+.socialIcons {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.socialIcons img {
+  transition: transform 0.2s ease;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.1);
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
