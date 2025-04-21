@@ -30,7 +30,7 @@ export default function Home() {
           <div className={styles.aboutImage}>
             <Image
               src="/thomas-professional.jpeg"
-              alt="A image of funny Thomas"
+              alt="Thomas Le Image"
               width={300}
               height={300}
               className={styles.thomasImage}
@@ -74,8 +74,7 @@ export default function Home() {
             where a lot of my creativity shines. I love turning moments into
             stories and sharing them with others. I also enjoy unwinding with a
             good Korean drama or catching up on One Piece, and I’m constantly
-            saving inspiration from Pinterest to keep my ideas
-            flowing.asdkfjsklafjdklsajfjsadflksjafkldjsaflkjdflksajdfkljafkldjafsklajdflkjasflsdfsfdsfsfdsf
+            saving inspiration from Pinterest to keep my ideas flowing.
           </p>
         </div>
 
